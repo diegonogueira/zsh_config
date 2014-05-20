@@ -11,9 +11,10 @@ alias gm="git merge --no-ff"
 alias gp="git push"
 alias gl="git log --graph"
 alias gsl="git stash list"
+alias rt="rake -Itest"
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
-		alias ga="gitk --all"  
+		alias ga="gitk --all"
 elif [[ "$OSTYPE" == "darwin"* ]]; then
 		alias ga="gitx --all"
 fi

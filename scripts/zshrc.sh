@@ -8,7 +8,7 @@ export ZSH=$HOME/.oh-my-zsh
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
 		ZSH_THEME="robbyrussell"
 elif [[ "$OSTYPE" == "darwin"* ]]; then
-		ZSH_THEME="avit"		
+		ZSH_THEME="avit"
 fi
 
 # Example aliases
