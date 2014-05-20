@@ -1,6 +1,7 @@
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
 
 elif [[ "$OSTYPE" == "darwin"* ]]; then
+		export DYLD_LIBRARY_PATH="/usr/local/mysql/lib:$DYLD_LIBRARY_PATH"
 		export PATH="$PATH:/bin"
 		export PATH="$PATH:/sbin"
 		export PATH="$PATH:/usr/bin"
