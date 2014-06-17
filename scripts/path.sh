@@ -4,6 +4,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
 		export PATH="$PATH:$HOME/Documents/scala/scala-2.10.3/bin"
 		export PATH="$PATH:$HOME/Documents/scala/play-2.2.3"
 		export PATH="$PATH:/usr/local/heroku/bin"
+		export PATH="$PATH:$HOME/bin"
 elif [[ "$OSTYPE" == "darwin"* ]]; then
 		export DYLD_LIBRARY_PATH="/usr/local/mysql/lib:$DYLD_LIBRARY_PATH"
 		export PATH="$PATH:/bin"
@@ -21,6 +22,6 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
 		export PATH="$PATH:$HOME/Documents/scala/scala-2.10.4/bin"
 		export PATH="$PATH:$HOME/Projects/applications/activator-1.2.1-minimal"
 		export PATH="$PATH:$HOME/bin"
-		export PATH="$PATH:$HOME/Documents/scala/sbt/bin"
 		export PATH="$PATH:$HOME/.rbenv/shims"
+		export PATH="$PATH:$HOME/bin"
 fi
