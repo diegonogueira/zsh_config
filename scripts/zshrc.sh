@@ -5,11 +5,11 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-if [[ "$OSTYPE" == "linux-gnu" ]]; then
+#if [[ "$OSTYPE" == "linux-gnu" ]]; then
 		ZSH_THEME="robbyrussell"
-elif [[ "$OSTYPE" == "darwin"* ]]; then
-		ZSH_THEME="avit"
-fi
+#elif [[ "$OSTYPE" == "darwin"* ]]; then
+#		ZSH_THEME="avit"
+#fi
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
