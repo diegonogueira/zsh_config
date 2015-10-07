@@ -23,18 +23,17 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
     # Docker
     alias dkup="docker-compose up"
     alias dkstop="docker-compose stop"
-    alias dknfs="docker-machine-nfs default"
+    alias dknfs="docker-machine-nfs docker"
     alias dkbash="docker-compose run --service-ports --rm web bash"
     alias dkrun="dknfs; dkbash"
 
-    dklogin() {
-      /Applications/Docker/Docker\ Quickstart\ Terminal.app/Contents/Resources/Scripts/start.sh
-    }
-
-    cd () { builtin cd "$@" && start_docker_machine; }
-    start_docker_machine () {
-      if [ -f Dockerfile ]; then
-        dklogin
-      fi
-    }
+    #dklogin() {
+      #/Applications/Docker/Docker\ Quickstart\ Terminal.app/Contents/Resources/Scripts/start.sh
+    #}
+    #cd () { builtin cd "$@" && start_docker_machine; }
+    #start_docker_machine () {
+      #if [ -f Dockerfile ]; then
+        #dklogin
+      #fi
+    #}
 fi
