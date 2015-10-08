@@ -28,5 +28,5 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
     alias dkstart="docker-machine start docker && source $HOME/.zshrc"
     alias dknfs="docker-machine-nfs docker"
     alias dkbash="docker-compose run --service-ports --rm web bash"
-    alias dkup="dkstart; dknfs; dkbash"
+    alias dkup="dkstart && dknfs && dkbash"
 fi
