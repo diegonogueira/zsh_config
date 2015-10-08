@@ -23,6 +23,7 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
     # Docker
     alias dkc="docker-compose"
     alias dkm="docker-machine"
+    alias dkbye="docker-machine stop docker"
     alias dk="docker"
     alias dkstart="docker-machine start docker"
     alias dknfs="docker-machine-nfs docker"
