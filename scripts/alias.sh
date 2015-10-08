@@ -21,19 +21,11 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
     alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
 
     # Docker
-    alias dkup="docker-compose up"
-    alias dkstop="docker-compose stop"
+    alias dkc="docker-compose"
+    alias dkm="docker-machine"
+    alias dk="docker"
+    alias dkstart="docker-machine start docker"
     alias dknfs="docker-machine-nfs docker"
     alias dkbash="docker-compose run --service-ports --rm web bash"
-    alias dkrun="dknfs; dkbash"
-
-    #dklogin() {
-      #/Applications/Docker/Docker\ Quickstart\ Terminal.app/Contents/Resources/Scripts/start.sh
-    #}
-    #cd () { builtin cd "$@" && start_docker_machine; }
-    #start_docker_machine () {
-      #if [ -f Dockerfile ]; then
-        #dklogin
-      #fi
-    #}
+    alias dkup="dkstart; dknfs; dkbash"
 fi
