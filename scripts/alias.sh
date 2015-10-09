@@ -21,6 +21,7 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
     alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
 
     # Docker
+		alias dk="docker"
     alias dkm="docker-machine"
     alias dkc="docker-compose"
     alias dkdown="dkm stop docker"
@@ -29,7 +30,7 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
     alias dkbash="dkc run --service-ports --rm web bash"
     alias dkstop="dkc stop"
 
-    dk() {
+    dkinit() {
       docker-machine start docker && docker-machine-nfs docker
       eval "$(docker-machine env docker)"
       clear
