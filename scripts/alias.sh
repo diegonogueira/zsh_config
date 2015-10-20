@@ -29,6 +29,12 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
     alias dkrun="dkc run --rm web"
     alias dkbash="dkc run --service-ports --rm web bash"
     alias dkstop="dkc stop"
+    alias dkexec='dk exec -it "${PWD##*/}_web_1"'
+    alias dkbuild='dkc build'
+    alias dkps='dk ps'
+    alias dkpsa='dk ps -a'
+    alias dki='dk images'
+    #alias dkclear="docker rm $(docker ps -q -f status=exited)"
 
     dkinit() {
       docker-machine start docker && docker-machine-nfs docker
