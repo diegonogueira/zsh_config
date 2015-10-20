@@ -15,13 +15,13 @@ alias gsl="git stash list"
 alias rt="rake -Itest"
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
-		alias ga="gitk --all"
+    alias ga="gitk --all"
 elif [[ "$OSTYPE" == "darwin"* ]]; then
-		alias ga="gitx --all"
+    alias ga="gitx --all"
     alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
 
     # Docker
-		alias dk="docker"
+    alias dk="docker"
     alias dkm="docker-machine"
     alias dkc="docker-compose"
     alias dkdown="dkm stop docker"
