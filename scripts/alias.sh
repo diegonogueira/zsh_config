@@ -37,7 +37,8 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
     #alias dkclear="docker rm $(docker ps -q -f status=exited)"
 
     dkinit() {
-      docker-machine start docker && docker-machine-nfs docker
+      docker-machine start docker
+      docker-machine-nfs docker
       eval "$(docker-machine env docker)"
       clear
       echo "Welcome to Docker!"
