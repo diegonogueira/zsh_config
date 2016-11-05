@@ -29,7 +29,7 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
     alias dk="docker"
     alias dkm="docker-machine"
     alias dkc="docker-compose"
-    alias dkdown="dkm stop docker-vb"
+    alias dkdown="dkm stop docker"
     alias dkup="dkc up"
     alias dkrun="dkc run --rm web"
     alias dkbash="dkc run --service-ports --rm web bash"
