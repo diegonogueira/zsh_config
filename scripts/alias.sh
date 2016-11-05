@@ -10,10 +10,10 @@ alias external_ip="curl -s http://checkip.dyndns.org | sed 's/[a-zA-Z/<> :]//g'"
 # GIT
 
 alias gs="git status"
-alias gp="git push"
+alias gpu="git push"
 alias gf="git fetch origin -p"
 alias gl="git log --graph"
-alias gpr="git pull --rebase"
+alias gp="git pull --rebase"
 alias gfs="git flow feature start "
 alias gfp="git flow feature publish "
 alias gff="git flow feature finish "
