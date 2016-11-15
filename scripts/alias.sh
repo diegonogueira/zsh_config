@@ -19,6 +19,16 @@ alias gffp="git flow feature publish "
 alias gfff="git flow feature finish "
 alias gfft="git flow feature track"
 
+# Elixir
+
+alias mt="mix test"
+alias mps="mix phoenix.server"
+alias iexm="iex -S mix"
+
+# Ember
+
+alias es="ember server"
+
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
     alias ga="gitk --all"
 elif [[ "$OSTYPE" == "darwin"* ]]; then
