@@ -22,7 +22,7 @@ alias gfft="git flow feature track"
 # Elixir
 
 alias mt="mix test"
-alias mps="mix phoenix.server"
+alias mps="mix phx.server"
 alias iexm="iex -S mix"
 
 # Ember
