@@ -7,6 +7,6 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
 		export PATH="$PATH:/usr/sbin"
 		export PATH="$PATH:/usr/local/bin"
 		export PATH="$PATH:$HOME/bin"
-
+    export PATH=~/Library/Python/3.6/bin:$PATH
     #eval "$(docker-machine env docker)"
 fi
