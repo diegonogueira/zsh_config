@@ -33,30 +33,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
     alias ga="gitk --all"
 elif [[ "$OSTYPE" == "darwin"* ]]; then
     alias ga="gitx --all"
-    alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
-    alias vi='/Applications/MacVim.app/Contents/MacOS/Vim'
-
-    # Docker
-    alias dk="docker"
-    alias dkm="docker-machine"
-    alias dkc="docker-compose"
-    alias dkdown="dkm stop docker"
-    alias dkup="dkc up"
-    alias dkrun="dkc run --rm web"
-    alias dkbash="dkc run --service-ports --rm web bash"
-    alias dkstop="dkc stop"
-    alias dkexec='dk exec -it "${PWD##*/}_web_1"'
-    alias dkbuild='dkc build'
-    alias dkps='dk ps'
-    alias dkpsa='dk ps -a'
-    alias dki='dk images'
-    #alias dkclear="docker rm $(docker ps -q -f status=exited)"
-
-    dkinit() {
-      docker-machine start docker
-      docker-machine-nfs docker
-      eval "$(docker-machine env docker)"
-      clear
-      echo "Welcome to Docker!"
-    }
+    # alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
+    # alias mvim='/Applications/MacVim.app/Contents/MacOS/Vim -g'
+    # alias vi='/Applications/MacVim.app/Contents/MacOS/Vim'
 fi
