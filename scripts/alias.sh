@@ -1,6 +1,5 @@
 # Shell
 
-alias n="nvim"
 alias ll="ls -Glahs"
 alias ls="/bin/ls -G"
 alias psgrep="ps aux | egrep -v egrep | egrep"
@@ -18,6 +17,8 @@ alias gffs="git flow feature start "
 alias gffp="git flow feature publish "
 alias gfff="git flow feature finish "
 alias gfft="git flow feature track"
+
+alias vimedit="cd ~/.vim.d; mvim"
 
 # Elixir
 
