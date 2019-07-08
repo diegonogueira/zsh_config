@@ -4,7 +4,7 @@ alias ll="ls -Glahs"
 alias ls="/bin/ls -G"
 alias psgrep="ps aux | egrep -v egrep | egrep"
 alias internal_ip="ipconfig getifaddr en0"
-alias external_ip="curl -s http://checkip.dyndns.org | sed 's/[a-zA-Z/<> :]//g'"
+alias myip='export IP=`curl -s https://api.ipify.org`;echo $IP'
 
 # GIT
 
